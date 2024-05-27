@@ -1,0 +1,89 @@
+.listContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+
+.itemImg{
+    height: 100px;
+}
+
+.itemName{
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.itemCurrency{
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-left: 22px;
+    margin-bottom: 0px;
+}
+
+.itemDescription{
+    font-size: 13px;
+    font-weight: 500;
+    color: #6a6c6d;
+    margin-top: 5px;
+    margin-left: 22px;
+    margin-bottom: 0px;
+}
+
+.calories{
+    font-size: 13px;
+    font-weight: 600;
+    color: #fcae1e;
+}
+
+.custom{
+    color: #7F00FF;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 6px;
+    margin-left: 22px;
+    margin-bottom: 0px;
+}
+
+.notAvail{
+    color: #C41E3A;
+    font-size: 13px;
+    margin-top: 5px;
+    margin-left: 22px;
+    margin-bottom: 0px;
+}
+
+.buttonContainer{
+    background-color: #4F7942;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80px;
+    height: 20px;
+    border: 0px;
+    font-size: 12px;
+    border-radius: 35px;
+    padding: 3px;
+    color: white;
+    margin-top: 7px;
+    margin-left: 22px;
+}
+
+.buttons{
+    background-color: transparent;
+    border: 0px;
+    color: white;
+    margin-bottom: auto;
+}
+
+.typeContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-left: 0px;
+}
