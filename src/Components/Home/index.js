@@ -1,3 +1,5 @@
+
+
 import { Component } from "react";
 import EachMenuCat from "../EachLink";
 import EachItem from "../EachItem";
@@ -85,6 +87,7 @@ class Home extends Component{
                 if (each.menuCategoryId === menuCatId){
                     return each
                 }
+                return null
             })
             // console.log(filteredData[0])
         }

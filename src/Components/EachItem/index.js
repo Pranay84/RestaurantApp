@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react'
+import { useState } from 'react'
 import './index.css'
 
 import {Para, Span} from './styledComponents'
@@ -6,7 +6,7 @@ import RestaurantContext from '../../Context/restaurantContext'
 
 const EachItem = props => {
     const {details} = props
-    const {dishId, dishImage, dishName, dishPrice, dishAvailability, dishType, dishCalories, dishCurrency, dishDescription, nexturl, addonCat} = details
+    const {dishId, dishImage, dishName, dishPrice, dishAvailability, dishType, dishCalories, dishCurrency, dishDescription, addonCat} = details
     // console.log(dishName)
 
     const [count, setCount] = useState(0)
@@ -25,13 +25,15 @@ const EachItem = props => {
                 }
 
                 const changeDecreaseCount = event => {
-                    setCount(count - 1)
-                    setOrderCount(orderCount - 1)
+                    if (count > 0){
+                        setCount(count - 1)
+                        setOrderCount(orderCount - 1)
+                    }
                 }
 
                 
                 return (
-                    <li className="listContainer" >
+                    <li className="listContainer" id={dishId} >
                         <div>
                             <div className='typeContainer' >
                                 <Para dishType={dishType} ><Span dishType={dishType} ></Span></Para>
